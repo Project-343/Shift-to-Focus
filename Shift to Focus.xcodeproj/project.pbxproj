@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50C7D70253E3530001117B5 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C7D6F253E3530001117B5 /* InsetTextField.swift */; };
+		D50C7D75253E39D4001117B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C7D74253E39D4001117B5 /* SignUpViewController.swift */; };
 		D59ED40325327A8700D42C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59ED40225327A8700D42C0B /* AppDelegate.swift */; };
 		D59ED40525327A8700D42C0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59ED40425327A8700D42C0B /* SceneDelegate.swift */; };
 		D59ED40C25327A8800D42C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59ED40B25327A8800D42C0B /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		7BC200211D12FFB1FECC93ED /* Pods-Shift to Focus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shift to Focus.release.xcconfig"; path = "Target Support Files/Pods-Shift to Focus/Pods-Shift to Focus.release.xcconfig"; sourceTree = "<group>"; };
 		99EF32AAD155B58E7A4C5281 /* Pods-Shift to Focus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shift to Focus.debug.xcconfig"; path = "Target Support Files/Pods-Shift to Focus/Pods-Shift to Focus.debug.xcconfig"; sourceTree = "<group>"; };
+		D50C7D6F253E3530001117B5 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		D50C7D74253E39D4001117B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D59ED3FF25327A8700D42C0B /* Shift to Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shift to Focus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59ED40225327A8700D42C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D59ED40425327A8700D42C0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D50C7D73253E39B9001117B5 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				D50C7D74253E39D4001117B5 /* SignUpViewController.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
 		D59ED3F625327A8700D42C0B = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +96,9 @@
 		D59ED40125327A8700D42C0B /* Shift to Focus */ = {
 			isa = PBXGroup;
 			children = (
-				D59ED42A25327E7000D42C0B /* Utility */,
-				D59ED41F25327BCF00D42C0B /* Screens */,
 				D59ED41925327B2E00D42C0B /* Base */,
+				D59ED41F25327BCF00D42C0B /* Screens */,
+				D59ED42A25327E7000D42C0B /* Utility */,
 				D59ED40225327A8700D42C0B /* AppDelegate.swift */,
 				D59ED40425327A8700D42C0B /* SceneDelegate.swift */,
 				D59ED40B25327A8800D42C0B /* Assets.xcassets */,
@@ -107,6 +119,7 @@
 		D59ED41F25327BCF00D42C0B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D50C7D73253E39B9001117B5 /* Sign Up */,
 				D59ED42025327BDB00D42C0B /* Sign In */,
 			);
 			path = Screens;
@@ -125,6 +138,7 @@
 			children = (
 				D59ED42B25327E8100D42C0B /* Extensions.swift */,
 				D59ED42F253281E000D42C0B /* Shared.swift */,
+				D50C7D6F253E3530001117B5 /* InsetTextField.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -244,9 +258,11 @@
 			files = (
 				D59ED430253281E000D42C0B /* Shared.swift in Sources */,
 				D59ED42C25327E8100D42C0B /* Extensions.swift in Sources */,
+				D50C7D75253E39D4001117B5 /* SignUpViewController.swift in Sources */,
 				D59ED42225327C0700D42C0B /* SignInViewController.swift in Sources */,
 				D59ED41B25327B4E00D42C0B /* BaseViewController.swift in Sources */,
 				D59ED40325327A8700D42C0B /* AppDelegate.swift in Sources */,
+				D50C7D70253E3530001117B5 /* InsetTextField.swift in Sources */,
 				D59ED40525327A8700D42C0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

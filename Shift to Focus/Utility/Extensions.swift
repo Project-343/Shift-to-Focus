@@ -17,6 +17,11 @@ extension UIView {
         }
     }
     
+    convenience init(spacer huggingPriority: UILayoutPriority, axis: NSLayoutConstraint.Axis) {
+        self.init()
+        setContentHuggingPriority(huggingPriority, for: axis)
+    }
+    
 }
 
 extension UITextField {
@@ -26,6 +31,7 @@ extension UITextField {
         backgroundColor = .label
         attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : UIColor.systemBackground])
         textColor = .systemBackground
+        layer.cornerRadius = 5
     }
     
 }
@@ -55,16 +61,18 @@ extension UIButton {
     convenience init(customTitle: String) {
         self.init()
         backgroundColor = Shared.themeColor
+        titleLabel?.font = .boldSystemFont(ofSize: titleLabel!.font.pointSize)
         setTitle(customTitle, for: .normal)
         setTitleColor(.white, for: .normal)
         layer.cornerRadius = 5
+        contentEdgeInsets = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
     }
     
     convenience init(title1: String, title2: String) {
         self.init()
-        let attributedTitle1 = NSAttributedString(string: title1, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .thin)])
+        let attributedTitle1 = NSAttributedString(string: title1, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: titleLabel!.font.pointSize, weight: .thin)])
         let attributedTitle2 = NSAttributedString(string: title2, attributes: [
-            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .bold),
+            NSAttributedString.Key.font : UIFont.systemFont(ofSize: titleLabel!.font.pointSize, weight: .bold),
             NSAttributedString.Key.foregroundColor: Shared.themeColor
         ])
         let titleCombined = NSMutableAttributedString()
